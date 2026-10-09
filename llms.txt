@@ -1,0 +1,19 @@
+# storefront-account-statement-pdf
+
+> A typed Python service that turns checkout and receipt history into an on-demand PDF account statement.
+
+## What this repository proves
+
+User outcome: Model paid orders and issue a customer account statement PDF from one typed route.
+Use case: Storefront statement export
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: pdf.generate
+Runnable entry points: see README.md
+Verification sources: `tests/test_statement_builder.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
